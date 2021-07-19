@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>student registration form</h1>
+
+<div class="container">
+  <div class="row">
+        <div class="col-4">
+
+
+    <form action="{% url 'getreg' %}" method="post">
+        {%csrf_token%}
+
+
+
+
+
+      <input type="text" placeholder="firstname" name="fname">
+
+      <input type="text" placeholder="email" name="email">
+      <input type="text" placeholder="username" name="uname">
+      <input type="text" placeholder="password" name="password">
+  <input type="submit" value="register">
+
+
+
+
+
+
+    </form>
+        </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

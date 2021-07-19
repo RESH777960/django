@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+{%load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
 </head>
 <body>
 <h1>Todo App</h1>
+<a href="">create todo</a>
+<a href="{%url  'list' %}">list all todos</a>
+
 
 </body>
 </html>
