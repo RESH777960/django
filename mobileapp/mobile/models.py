@@ -8,13 +8,9 @@ class Brand(models.Model):
     def __str__(self):
         return self.brand_name
 
-
-
-
-
 class Product(models.Model):
     mobile_name=models.CharField(max_length=120,unique=True)
-    brand=models.ForeignKey(Brand,on_delete=models.CASCADE)
+    brand=models.ForeignKey(Brand,on_delete=models.CASCADE)#delete brand when delete an object
     price=models.IntegerField()
     specs=models.CharField(max_length=200)
     image=models.ImageField(upload_to="images",max_length=200)

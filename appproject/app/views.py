@@ -13,18 +13,8 @@ def create(request):
         form=TodoCreateForm()
         context={}
         context["form"]=form
-
         return render(request,"createtodo.html",context)
-
-
-
-
-
-
     if request.method=="POST":
-
-
-
         form=TodoCreateForm(request.POST)
         if form.is_valid():
             taskname=form.cleaned_data.get("task_name")
@@ -82,6 +72,11 @@ def list_todos(request):
 
 
 def update(request):
+
+
+
+
+
     pass
 def delete(request):
     pass

@@ -14,7 +14,7 @@
 
 </head>
 <body>
-{{crsf_token}}
+    {%csrf_token%}
 
 
 <table class="table">
@@ -41,9 +41,9 @@
 
         <td>
 
-            <a href="" class="btn btn-sucess">Edit</a>
-            <a href="" class="btn btn-warning">View</a>
-            <a href="" class="btn btn-danger">Delete</a>
+            <a href="{%url  'change' mobile.id%}" class="btn btn-primary">Edit</a>
+            <a href="{%url 'product_detail' mobile.id%}" class="btn btn-warning">View</a>
+            <a href="{%url 'remove' mobile.id%}" class="btn btn-danger">Delete</a>
 
         </td>
 
